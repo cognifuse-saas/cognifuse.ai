@@ -83,10 +83,10 @@ const NavEl = () => {
             </div>
             <PopoverGroup className="hidden lg:flex lg:gap-x-12">
               <Popover className="relative">
-                <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
+                {/* <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6">
                   Agents
                   <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none transition-colors duration-500" />
-                </PopoverButton>
+                </PopoverButton> */}
 
                 <PopoverPanel
                   transition
@@ -126,7 +126,7 @@ const NavEl = () => {
                 </PopoverPanel>
               </Popover>
 
-              <a href="#" className="text-sm font-semibold leading-6">
+              {/* <a href="#" className="text-sm font-semibold leading-6">
                 Features
               </a>
               <a href="#" className="text-sm font-semibold leading-6">
@@ -134,13 +134,13 @@ const NavEl = () => {
               </a>
               <a href="#" className="text-sm font-semibold leading-6">
                 Company
-              </a>
+              </a> */}
             </PopoverGroup>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <a href="auth/login-screen" className="text-sm font-semibold leading-6">
                 Log in <span aria-hidden="true">&rarr;</span>
               </a>
-            </div>
+            </div> */}
           </nav>
           <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <div className="fixed inset-0 z-10" />
@@ -184,7 +184,7 @@ const NavEl = () => {
                         ))}
                       </DisclosurePanel>
                     </Disclosure>
-                    <a
+                    {/* <a
                       href="#"
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
@@ -201,16 +201,16 @@ const NavEl = () => {
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Company
-                    </a>
+                    </a> */}
                   </div>
-                  <div className="py-6">
+                  {/* <div className="py-6">
                     <a
                       href="auth/login-screen"
                       className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       Log in
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </DialogPanel>

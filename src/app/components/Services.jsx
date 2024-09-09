@@ -52,13 +52,13 @@ const OurServices = () => {
                   </svg>
                   <span><strong className="font-semibold text-gray-900">Custom Solutions:</strong> Tailored to the unique needs of the African market.</span>
                 </li>
-                <li className="flex gap-x-3">
+                {/* <li className="flex gap-x-3">
                   <svg className="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
                     <path fillRule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clipRule="evenodd" />
                   </svg>
                   <span><strong className="font-semibold text-gray-900">Comprehensive Support:</strong> Including push-to-deploy, SSL certificates, and database backups.</span>
-                </li>
+                </li> */}
               </ul>
               <p className="mt-8">Our platform provides a seamless integration experience with minimal context switching and cost efficiency.</p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Efficient and Scalable</h2>
