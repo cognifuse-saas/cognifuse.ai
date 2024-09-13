@@ -208,11 +208,11 @@ export default function Web() {
               <footer className="mt-8">
                 <div className="md:flex md:items-center md:justify-center">
                   <div className="md:flex-shrink-0">
-                    <img
-                      className="mx-auto h-16 w-16 rounded-full border-2 border-indigo-500"
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
+                    <div className="mx-auto h-16 w-16 rounded-full bg-indigo-100 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-indigo-600">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                      </svg>
+                    </div>
                   </div>
                   <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                     <div className="text-base font-medium text-gray-900">Elijah Kitur</div>
@@ -224,15 +224,6 @@ export default function Web() {
                 </div>
               </footer>
             </blockquote>
-          </div>
-
-          <div className="mt-16 flex justify-center">
-            <a
-              href="#"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-300 shadow-md"
-            >
-              Read More Success Stories
-            </a>
           </div>
         </div>
       </section>
