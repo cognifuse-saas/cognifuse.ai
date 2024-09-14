@@ -44,6 +44,29 @@ export default function Web() {
     <main>
       <NavEl />
       <Hero />
+
+      {/* Brand Partnerships */}
+      <section className="bg-white py-24 sm:py-32 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-3xl font-semibold tracking-tight leading-snug text-gray-900 sm:text-4xl mb-16">
+            Trusted by Industry Leaders
+          </h2>
+          <div className="relative">
+            <div className="flex overflow-hidden">
+              <div className="brand-container animate-scroll">
+                {['ZAZELLA', 'EACCC', 'MILLENIUM SOLUTIONS', 'SIGNVRSE', 'KENYA PORTS AUTHORITY', 'ZAZELLA', 'EACCC', 'MILLENIUM SOLUTIONS', 'SIGNVRSE', 'KENYA PORTS BOARD'].map((brand, index) => (
+                  <div key={index} className="flex items-center justify-center min-w-[200px] h-20 mx-8">
+                    <span className="text-gray-700 text-lg font-medium">{brand}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="absolute top-0 right-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent"></div>
+            <div className="absolute top-0 left-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent"></div>
+          </div>
+        </div>
+      </section>
+
       <OurServices />
 
       {/* Features Section */}
@@ -236,28 +259,6 @@ export default function Web() {
                 </div>
               </footer>
             </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* Brand Partnerships */}
-      <section className="bg-white py-24 sm:py-32 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-semibold tracking-tight leading-snug text-gray-900 sm:text-4xl mb-16">
-            Trusted by Industry Leaders
-          </h2>
-          <div className="relative">
-            <div className="flex overflow-hidden">
-              <div className="brand-container animate-scroll">
-                {['ZAZELLA', 'EACCC', 'MILLENIUM SOLUTIONS', 'SIGNVRSE', 'KENYA PORTS BOARD', 'ZAZELLA', 'EACCC', 'MILLENIUM SOLUTIONS', 'SIGNVRSE', 'KENYA PORTS BOARD'].map((brand, index) => (
-                  <div key={index} className="flex items-center justify-center min-w-[200px] h-20 mx-8">
-                    <span className="text-gray-700 text-lg font-medium">{brand}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="absolute top-0 right-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent"></div>
-            <div className="absolute top-0 left-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent"></div>
           </div>
         </div>
       </section>
