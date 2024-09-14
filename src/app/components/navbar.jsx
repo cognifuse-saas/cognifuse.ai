@@ -16,6 +16,10 @@ const NavEl = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleBooking = () => {
+    window.open('https://calendly.com/cognifuse1/30min', '_blank');
+  };
+
   return (
     <>
       <header
@@ -45,7 +49,14 @@ const NavEl = () => {
             </button>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 transition-colors duration-300">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                handleBooking();
+              }}
+              className="text-sm font-semibold leading-6 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-500 transition-colors duration-300"
+            >
               Book A Call To Get Started
             </a>
           </div>
@@ -93,9 +104,10 @@ const NavEl = () => {
                 <a
                   href="#"
                   className="block w-full rounded-lg px-3 py-2.5 text-center text-base font-semibold leading-7 text-white bg-indigo-600 hover:bg-indigo-500 transition-colors duration-300"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.preventDefault();
                     setMobileMenuOpen(false);
-                    // Add your booking logic here
+                    handleBooking();
                   }}
                 >
                   Book A Call To Get Started

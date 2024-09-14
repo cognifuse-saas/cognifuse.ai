@@ -1,4 +1,8 @@
 const Hero = () => {
+  const handleBooking = () => {
+    window.open('https://calendly.com/cognifuse1/30min', '_blank');
+  };
+
   return (
     <>
       {/* Hero */}
@@ -23,13 +27,8 @@ const Hero = () => {
               It's time you stop worrying about the small administrative tasks and get back to what matters—scaling your business.
             </p>
             <div className="flex justify-center space-x-4">
-              {/* <button
-                type="submit"
-                className="flex w-auto justify-center rounded-md bg-indigo-600 px-6 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                Get Started
-              </button> */}
               <button
-                onClick={() => window.location.href = "mailto:demo@youremail.com?subject=Demo%20Request&body=I%20would%20like%20to%20request%20a%20demo."}
+                onClick={handleBooking}
                 className="flex w-auto justify-center rounded-md bg-indigo-600 px-6 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 Get a Demo
               </button>
