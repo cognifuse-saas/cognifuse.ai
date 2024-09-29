@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import Image from 'next/image';
 
 const NavEl = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -33,7 +34,14 @@ const NavEl = () => {
           <div className="flex flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Cognifuse AI</span>
-              <img alt="Cognifuse AI Logo" src="/images/logo-2-removebg-preview.png" className="h-10 w-auto" />
+              <Image
+        alt="Cognifuse AI Logo"
+        src="/images/logo-2-removebg-preview.png"
+        // layout="responsive"
+        width={100}  // Adjust based on the aspect ratio of your logo
+        height={200}  // Example for height matching h-10 (40px)
+        className="w-auto h-10"
+      />
             </a>
           </div>
           <div className="flex lg:hidden">

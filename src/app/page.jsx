@@ -5,6 +5,7 @@ import NavEl from "./components/navbar"
 import Hero from "./components/hero"
 import OurServices from "./components/Services"
 import { ArrowPathIcon, CloudArrowUpIcon, LightBulbIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 const iconComponents = {
   ArrowPathIcon,
@@ -237,7 +238,7 @@ export default function Web() {
             <blockquote className="relative">
               <div className="max-w-3xl mx-auto text-center text-xl font-medium leading-9 text-gray-900">
                 <p>
-                  "Cognifuse AI has significantly improved legal operations at the Kenya Ports Board by rapidly analyzing maritime documents and cross-referencing them with Kenyan regulations. The system has increased efficiency by 40%, allowing for more cases to be handled with greater accuracy."
+                  Cognifuse AI has significantly improved legal operations at the Kenya Ports Board by rapidly analyzing maritime documents and cross-referencing them with Kenyan regulations. The system has increased efficiency by 40%, allowing for more cases to be handled with greater accuracy.
                 </p>
               </div>
               <footer className="mt-8">
@@ -292,7 +293,13 @@ export default function Web() {
           </div>
           <div className="mt-16 border-t border-gray-200 pt-8 flex justify-center">
             <div className="flex items-center">
-              <img src="/images/logo-2-removebg-preview.png" alt="Cognifuse AI Logo" className="h-12 w-auto" />
+            <Image
+      src="/images/logo-2-removebg-preview.png"  // Ensure the image is in the "public/images" folder
+      alt="Cognifuse AI Logo"
+      width={48}  // You need to provide a width
+      height={48} // You need to provide a height
+      className="h-12 w-auto"
+    />
             </div>
           </div>
         </div>

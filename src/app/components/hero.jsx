@@ -24,7 +24,7 @@ const Hero = () => {
               Discover How We Will Help You Buy Back Time And Get Cost-Effective Experts On Your Team Using Our All-in-one, AI-first Platform
             </h1>
             <p className="mb-6 max-w-2xl font-light text-gray-300 md:text-base lg:mb-8 lg:text-lg text-center mx-auto">
-              It's time you stop worrying about the small administrative tasks and get back to what matters—scaling your business.
+              It&apos;s time you stop worrying about the small administrative tasks and get back to what matters—scaling your business.
             </p>
             <div className="flex justify-center space-x-4">
               <button
